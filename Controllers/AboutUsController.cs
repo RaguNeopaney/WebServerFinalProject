@@ -13,6 +13,7 @@ namespace FinalProject.Controllers
     {
         // DBContext stuff
         private ContactUsDbContext _context { get; set; }
+
         public AboutUsController(ContactUsDbContext ctx)
         {
             _context = ctx;
@@ -36,7 +37,6 @@ namespace FinalProject.Controllers
                 };
                 _context.ContactUs.Add(contactUstosave);
                 _context.SaveChanges();
-
             }
 
             return RedirectToAction("AboutUs", "AboutUs");

@@ -1,5 +1,4 @@
 ﻿function Tabs(options) {
-
     var tabs = document.querySelector(options.el);
     var initCalled = false;
     var tabNavigation = tabs.querySelector(".c-tabs-nav");
@@ -66,7 +65,6 @@
     }
 }
 
-
 var m = new Tabs({
     el: "#tabs",
     marker: true
@@ -96,11 +94,10 @@ $('#myForm').submit(function (e) {
             }
         }
     })
-
 });
 
 function empty() {
-    var x,y,z;
+    var x, y, z;
     x = document.getElementById("name").value;
     y = document.getElementById("email").value;
     z = document.getElementById("message").value;
@@ -137,18 +134,4 @@ function empty() {
     else {
         return true;
     };
-
 }
-
-//document.getElementById("submit").onclick = function () {
-//    let allAreFilled = true;
-//    document.getElementById("myForm").querySelectorAll("[required]").forEach(function (i) {
-//        if (!allAreFilled) return;
-//        if (!i.value) allAreFilled = false;
-//    })
-//    if (!allAreFilled) {
-//        toastr.error('Sign Up Successful');
-//    }
-//};
-
-

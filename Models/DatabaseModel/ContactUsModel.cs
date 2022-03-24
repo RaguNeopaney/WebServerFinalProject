@@ -13,10 +13,12 @@ namespace FinalProject.Models.DatabaseModel
         [Required]
         [StringLength(100)]
         public string Name { get; set; }
+
         [Column]
         [Required]
         [StringLength(50)]
         public string Email { get; set; }
+
         [Column(TypeName = "TEXT")]
         [Required]
         public string Messsage { get; set; }

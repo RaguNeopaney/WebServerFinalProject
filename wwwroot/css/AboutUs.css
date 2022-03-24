@@ -12,7 +12,6 @@ body {
     max-height: 500px;
 }
 
-
 #tabs {
     padding-top: 40px;
 }
@@ -240,7 +239,6 @@ body {
         color: #000000;
         font-size: 14px;
         text-align: center;
-        
     }
 
     .contact-form .submit-button-wrapper {
@@ -261,5 +259,3 @@ body {
             .contact-form .submit-button-wrapper input:hover {
                 background-color: #96ff68;
             }
-
-

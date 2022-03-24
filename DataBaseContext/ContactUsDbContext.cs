@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace FinalProject.DataBaseContext
 {
-    public class ContactUsDbContext: DbContext
+    public class ContactUsDbContext : DbContext
     {
         public ContactUsDbContext(DbContextOptions<ContactUsDbContext> options) :
         base(options)

@@ -1,0 +1,108 @@
+﻿
+
+@using FinalProject.Models.ViewModel
+@model ContactUsViewModel
+
+<link rel="stylesheet" href="~/css/AboutUs.css" />
+<link rel="stylesheet" href="~/lib/toastr.js/toastr.min.css"/>
+
+<section id=page>
+    <div id="tabs" class="c-tabs">
+        <div class="c-tabs-nav">
+            <a href="#" class="c-tabs-nav__link">About us</a>
+            <a href="#" class="c-tabs-nav__link">Contact</a>
+            <a href="#" class="c-tabs-nav__link">Developers</a>
+            <div class="c-tab-nav-marker"></div>
+        </div>
+
+
+        <div class="c-tab is-active">
+            <div class="c-tab__content">
+                <h2>About us</h2>
+                <p>lorem ipsum set dolor amet lorem ipsum set dolor amet lorem ipsum set dolor amet lorem ipsum set dolor amet lorem ipsum set dolor amet lorem ipsum set dolor ametlorem ipsum set dolor ametlorem ipsum set dolor</p>
+            </div>
+        </div>
+
+        <div class="c-tab">
+            <div class="c-tab__content">
+                <div>
+                    <div class="contact-form-wrapper d-flex justify-content-center">
+                        <form method="post" asp-controller="AboutUs" asp-action="ContactUs" onsubmit="return checkform(this)" class="contact-form" id="myForm">
+                            <h5 class="title">Contact us</h5>
+                            <p class="description">
+                                Feel free to contact us if you need any assistance, any help or another question.
+                            </p>
+                            <div>
+                                <input asp-for="Name" type="text" class="form-control rounded border-white mb-3 form-input" id="name" placeholder="Name" >
+                            </div>
+                            <div>
+                                <input asp-for="Email" type="email" class="form-control rounded border-white mb-3 form-input" id="email" placeholder="Email" >
+                            </div>
+                            <div>
+                                <textarea asp-for="Message" id="message" class="form-control rounded border-white mb-3 form-text-area" rows="5" cols="30" placeholder="Message" id="message"></textarea>
+                            </div>
+                            <div class="submit-button-wrapper">
+                                <input type="submit" id="submit" value="Send" onclick="return empty()">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="c-tab">
+            <div class="c-tab__content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <figure class="snip1336">
+                                <img src="~/Images/RaguNeopaneyBackground.jpg" alt="sample87" />
+                                <figcaption>
+                                    <img src="~/Images/RaguNeopaney.jpg" alt="profile-sample4" class="profile" />
+                                    <h2>Ragu Neopaney<span>CS Major</span></h2>
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="col">
+                            <figure class="snip1336 hover">
+                                <img src="~/Images/YeatiMishraBackground.png" alt="sample74" />
+                                <figcaption>
+                                    <img src="~/Images/YeatiMishra.jpg" alt="profile-sample2" class="profile" />
+                                    <h2>Yeati Mishra<span>IT Major</span></h2>
+                                    <p>Calvin: I'm a genius, but I'm a misunderstood genius. Hobbes: What's misunderstood about you? Calvin: Nobody thinks I'm a genius.</p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="col">
+                            <figure class="snip1336">
+                                <img src="~/Images/PruthviPatelBackground.png" alt="sample69" />
+                                <figcaption>
+                                    <img src="~/Images/PruthviPatel.jpg" alt="profile-sample5" class="profile" />
+                                    <h2>Pruthvi Patel<span>IT Major</span></h2>
+                                    <p>If you want to stay dad you've got to polish your image. I think the image we need to create for you is "repentant but learning".</p>
+                                </figcaption>
+                            </figure>
+                        </div>
+@*                        <div class="col">
+                            <figure class="snip1336">
+                                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample69.jpg" alt="sample69" />
+                                <figcaption>
+                                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/profile-sample5.jpg" alt="profile-sample5" class="profile" />
+                                    <h2>Developer 3<span>Some Major</span></h2>
+                                    <p>If you want to stay dad you've got to polish your image. I think the image we need to create for you is "repentant but learning".</p>
+                                </figcaption>
+                            </figure>
+                        </div>*@
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+
+ <script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/lib/toastr.js/toastr.min.js"></script>
+<script src="~/js/AboutUs.js"></script>
